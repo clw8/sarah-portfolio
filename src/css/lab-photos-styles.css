@@ -1,0 +1,30 @@
+.row{
+  width:100%;
+  display:flex;
+  margin: 3px 0 3px 0;
+}
+
+.single{
+  height: 80vh;
+}
+
+.img-wrap img{
+  display:block;
+  width:100%;
+  height:100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.img-wrap{
+  width:100%;
+  height: 100%;
+  margin: 0 3px 0 3px;
+  display:flex;
+  justify-content: center;
+}
+
+#app{
+  background: rgba(248, 248, 253);
+}

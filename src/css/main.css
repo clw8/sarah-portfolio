@@ -1,0 +1,75 @@
+.main-view-wrapper{
+  /* background: rgb(3, 3, 3) url("../img/nature_photography/Merlin Falco columbarius.jpg"); */
+  background-position: right bottom !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  height:100vh;
+}
+
+.main-view-logo{
+  position:fixed;
+  width: 260px;
+  min-width: 260px;
+  z-index: 1;
+  top: 8%;
+  left: unset;
+  left: 65%;
+  transform: translateX(-25%);
+  /* border-radius: 2px; */
+  /* border: 1px solid white; */
+}
+
+.main-view-logo img {
+  width: 100%;
+}
+
+.main-view-logo p {
+  color: #f5f2f2;
+  text-align: left;
+  margin-top: 0;
+  position: relative;
+  left: 20px;
+  bottom: 10px;
+}
+
+h2{
+  margin: 0;
+}
+
+
+/* @media(min-height: 1000px){
+  .main-view-logo{
+    right: calc(30vh + 250px);
+  }
+} */
+
+@media(max-width: 500px) {
+  .main-view-logo{
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+
+@media(min-width: 1030px){
+  .main-view-logo{
+    left: 40%; 
+    top: 45%;
+    right: unset;
+    transform: translate(-25%, -50%);
+    min-width: 260px;
+  }
+}
+
+@media(min-width: 1300px){
+  .main-view-logo{
+    transform: translate(-45%,-50%);
+    min-width: 280px;
+  }
+}
+@media(min-width: 1800px){
+  .main-view-logo{
+    transform: translate(-25%,-50%);
+    min-width: 300px;
+  }
+}

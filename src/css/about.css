@@ -1,0 +1,110 @@
+.about-wrapper{  
+  width: 100%;
+  /* background: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url('../img/nature_photography/Arthur_s Seat, Edinburgh.jpg'); */
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center center !important;
+  background-attachment: fixed !important;
+  padding-top: 2em;
+  box-sizing: border-box;
+}
+
+.about-wrapper h2{
+  margin-top: 0px;
+}
+
+.about-section{
+  display:flex;
+  flex-flow: row;
+  padding: 0 2% 0 2%;
+}
+
+.about-inner {
+  width: 100%;
+  max-width: 920px;
+  margin: auto;
+}
+
+.about-text, .about-lower div{
+  line-height: 2em;
+}
+
+.about-lower{
+  width: 96%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.about-avatar{
+  height: 24vh;
+  width: auto;
+  border-radius: 50%;
+  transition: opacity 0.7s ease;
+  max-width: 280px;
+}
+
+.about-avatar:hover{
+  opacity: 0;
+}
+
+.about-avatar-container{
+  margin-right: 10px;
+  background: url('../img/about/Sarah_Houben.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 50%;
+  font-size: 0;
+
+}
+
+
+
+.about-profile-text img{
+  width: 50%;
+}
+
+.about-profile-text p{
+  margin-top: 10px;
+}
+
+@media screen and (orientation:portrait) {
+  .about-profile img{
+      height: 30vw;
+  }
+}
+
+
+
+
+@media(min-width: 600px){
+  .about-lower{
+    width: 90%;
+  }
+
+  .about-avatar-container{
+    margin-right: 30px;
+  }
+
+  .about-profile-text{
+    max-width: 50%;
+  }
+}
+
+@media(min-width: 680px){
+  .about-lower{
+    margin-top: 15px;
+  }
+}
+
+@media(min-width: 1300px){
+  .about-lower{
+    margin-top: 30px;
+  }
+}
+

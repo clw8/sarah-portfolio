@@ -1,0 +1,422 @@
+@import 'css/about.css';
+@import 'css/contact.css';
+@import 'css/lab-photos-styles.css';
+@import 'css/main.css';
+@import 'css/nature_photos.css';
+@import 'css/projects.css';
+
+
+#site-wrapper{
+  display:flex;
+  flex-flow:row;
+  position: relative;
+}
+
+html{
+  font-size: 12px;
+}
+
+body{
+  margin: 0px;
+  -webkit-user-select: none;
+   -moz-user-select: -moz-none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size: 12px;
+    font-family: 'Lato', sans-serif;
+    position: relative;
+}
+
+
+@media(min-width: 860px){
+  body,html{
+    font-size: 14px;
+  }
+}
+@media(min-width: 1300px){
+  body,html{
+    font-size: 15px;
+  }
+}
+
+@media(min-width: 1800px){
+  body,html{
+    font-size: 16px;
+  }
+}
+h1, h2, h3, h4{
+  text-align: center;
+font-family: 'Cutive Mono', monospace;
+font-weight: 300;
+color: rgb(17, 16, 16);
+/* color: black; */
+}
+
+p{
+  text-align: justify;
+
+}
+
+h2{
+  font-size: 1.6rem;
+}
+
+h3{
+  font-size: 1.3rem;
+}
+
+a, p, button, label{
+  color: rgb(46, 46, 46);
+  /* color: black; */
+  font-family: 'Lato', sans-serif;
+  /* font-size:14px; */
+  font-size: 1.1rem;
+}
+
+img{
+  width:100%;
+}
+
+a:hover{
+  opacity: 0.7;
+}
+
+li{
+  list-style: none;
+}
+
+.active{
+  /* font-weight: 800; */
+  color: LightGrey;
+  transition: color 0.6s cubic-bezier(.55,1.35,1,.35);
+}
+
+.imgloaded{
+  opacity: 1 !important;
+  visibility: initial !important;
+  pointer-events: all !important;
+}
+
+.hidden{
+  opacity: 0;
+  pointer-events: none;
+}
+
+.view-enter{
+  animation-name: fade-in;
+  animation-duration: 0.8s;
+}
+
+@keyframes fade-in{
+  from{opacity:0}
+  to{opacity: 1}
+}
+
+
+
+header{
+  height: 100vh;
+  width: 200px;
+  display: flex;
+  flex-flow: column;
+  overflow:visible;
+  padding-right: 10px;
+  background: rgb(248, 248, 253);
+  transition: all 1s ease;
+  z-index: 2;
+  position: fixed;
+}
+
+.nav-hidden{
+  transform: translateX(-100%);
+}
+
+.nav-hidden-appview{
+  width:100% !important;
+  left: 0 !important;
+}
+
+
+#app{
+  position: fixed;
+  width: calc(100vw - 210px);
+  left: 210px;
+  height: 100vh;
+  overflow:auto;
+  transition: all 1s ease;
+}
+
+
+
+.header-info{
+  position: absolute;
+  bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding-bottom: 5px;
+}
+
+.header-info img{
+  width: 32px;
+  display: inline-block;
+  margin-top: 3px;
+}
+
+.header-info a, .header-info p{
+  display: inline-block;
+  font-size: 11px;
+  padding: 0;
+}
+
+.header-info p{
+  /* padding: 0px 5px; */
+  display: block;
+  margin: 2px 0px;
+}
+
+
+/* 
+.header-info p:first-child{
+ padding-left: 0px; 
+}
+
+.header-info p:last-child{
+  border-right: none;
+  padding-right: 0px;
+} */
+
+.info-links, .social-media-links{
+  padding: 0% 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.info-links{
+  flex-direction: column;
+}
+
+.privacy-links{
+  display: flex;
+  justify-content: flex-start;
+}
+.privacy-links p{
+  margin-right: 10px;
+}
+
+
+
+
+
+
+
+#app > div{
+  height: 100vh;
+  overflow:scroll;
+
+}
+
+
+
+header ul{
+  padding-left:25px;
+}
+
+header h1{
+  padding: 8%;
+}
+
+header li{
+  margin-top: 10px;
+}
+
+.nested-ul{
+padding-left: 10px;
+/* margin-top: 10px; */
+}
+
+header a{
+  display:block;
+  border-radius: 2px;
+  text-decoration: none;
+}
+
+nav a{
+  padding: 3px 5% 3px 5px;
+}
+
+nav a:hover{
+  background: rgba(79, 79, 79, 0.3);
+  transition: 0.6s cubic-bezier(1,.49,.55,.96);
+}
+
+
+.nav-container-link:after{
+  content: ">";
+  display: inline-block;
+  padding-left: 10px;
+  transform: rotateZ(90deg) rotateY(90deg);
+  position:relative;
+  bottom: 5px;
+  font-size: 10px;
+}
+
+.nav-container-link:hover:after{
+  transform: rotateZ(90deg) rotateY(0deg);
+  transition: transform 0.6s cubic-bezier(1,.49,.55,.96);
+}
+
+
+
+.nav-container{
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.6s ease;
+}
+
+.nav-dropdown{
+  max-height: 150px;
+}
+
+
+.wrapper{
+  padding: 5%;
+}
+
+.wrapper p{
+  text-align: justify;
+}
+
+.imprint{
+  display: flex;
+  justify-content: center;
+}
+
+.flex-col{
+  display: flex;
+  justify-content: flex-start; 
+  align-items: center;
+  flex-direction: column;
+}
+
+.nav-burger-container{
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  /* padding: 5px; */
+  padding: 8px;
+  z-index: 1;
+  opacity: 0;
+}
+
+.nav-burger-container img{
+  width: 20px;
+}
+
+@media(min-width: 1300px){
+  header{
+    width: 16vw;
+  }
+
+  #app{
+    width: 84vw;
+    width: calc(84vw - 10px);
+    left: 16vw;
+    left: calc(16vw + 10px);
+  }
+
+  header ul {
+    padding-left: 2vw;
+  }
+
+  .info-links, .social-media-links{
+    padding: 0% 2vw;
+  }
+}
+
+@media(max-width: 800px){
+  header{
+    width: 170px;
+    padding-right: 5px;
+  }
+  #app{
+    width: 100vw;
+    width: calc(100vw - 175px);
+    left: 175px;
+  }
+}
+@media(max-width: 600px){
+  header{
+    width: 140px;
+  }
+  #app{
+    width: 100vw;
+    width: calc(100vw - 145px);
+    left: 145px;
+  }
+  header h1{
+    padding-left: 4%;
+  }
+  header ul, .social-media-links, .info-links{
+    padding-left: 16px;
+  }
+}
+
+
+@media(max-width: 500px){
+  header{
+    width: 100%;
+    /* production url below */
+    background: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url('https://res.cloudinary.com/doagarfl4/image/upload/v1540664079/Sarah%20portfolio/Peak_District_National_Park_UK.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    padding-right: 0px; 
+  }
+  #app{
+    width: 100%;
+    left: 0;
+  }
+
+  .header-img{
+    width: 170px;
+  }
+
+  header ul{
+    width: 170px;
+    margin: auto;
+  }
+
+  .header-info{
+    /* width: 200px; */
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .social-media-links{
+    justify-content: center;
+  }
+  .privacy-links{
+    justify-content: center;
+  }
+  .info-links p:nth-child(2){
+    text-align: center;
+  }
+  .privacy-links p:nth-child(2) {
+    margin-right: 0px;
+  }
+
+  nav a{
+    font-size: 1.3rem;
+  }
+
+  .nav-burger-container{
+    opacity: 1;
+  }
+
+  .active{
+    color: grey;
+  }
+}
+
+
