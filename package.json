@@ -1,0 +1,44 @@
+{
+  "name": "src",
+  "version": "1.0.0",
+  "description": "To self:",
+  "main": "app.js",
+  "dependencies": {
+    "gulp-rename": "^1.4.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.4",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "babel-preset-env": "^1.7.0",
+    "css-loader": "^1.0.0",
+    "file-loader": "^2.0.0",
+    "glob": "^7.1.2",
+    "gulp": "^3.9.1",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-minify-html": "^1.0.6",
+    "install": "^0.12.2",
+    "jsdom": "^11.12.0",
+    "live-server": "^1.2.0",
+    "mini-css-extract-plugin": "^0.4.1",
+    "node-sass": "^4.9.3",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.22.1",
+    "uglifyjs-webpack-plugin": "^1.3.0",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.5"
+  },
+  "scripts": {
+    "serve": "cd src && live-server",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node build.js --production && webpack && gulp minify-html && gulp minify-css",
+    "build-dev": "node build.js",
+    "watch": "nodemon --watch src/views --exec 'node build.js' -e html"
+  },
+  "author": "",
+  "license": "ISC"
+}
