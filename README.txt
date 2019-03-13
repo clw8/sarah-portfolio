@@ -3,7 +3,7 @@ To self:
 How to use
 
 Running build.js with node build.js does the following:
-Comüiles files from the /view folder and puts them in the root ( on the same level as the build.js file )
+Compiles files from the /view folder and puts them in the root ( on the same level as the build.js file )
 Creates a file called global--production.css at the root
 Javascript is compiled from the /js folder to the /dist folder
 
