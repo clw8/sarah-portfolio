@@ -95,6 +95,24 @@ function writeFiles(views){
     globalStyle.type = "text/css";
     globalStyle.rel = "stylesheet";
     globalStyle.href = "global--production.css";
+  } else {
+    let globalStyle = base_DOM.window.document.createElement('link');
+    base_DOM.window.document.querySelector('head').appendChild(globalStyle);
+    globalStyle.type = "text/css";
+    globalStyle.rel = "stylesheet";
+    globalStyle.href = "global.css";
+
+    // global script applies to all views, doesn't need to be reloaded, hence now class "app-script"
+    let globalScript = base_DOM.window.document.createElement('script');
+    base_DOM.window.document.body.appendChild(globalScript);
+    globalScript.type = "module";
+    globalScript.src = "main.js";
+
+    let globalScript2 = base_DOM.window.document.createElement('script');
+    base_DOM.window.document.body.appendChild(globalScript2);
+    globalScript2.type = "module";
+    globalScript2.src = "app.js";
+
   }
 
 

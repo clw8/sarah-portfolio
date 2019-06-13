@@ -9,6 +9,12 @@
   
 }
 
+.contact-wrapper--thanks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .submit-div{
     display: flex;
     justify-content: center;

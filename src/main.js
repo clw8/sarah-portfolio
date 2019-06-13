@@ -55,7 +55,11 @@ function fn(){
         case "lab-photos":
           naturePhotos();
           break;
+        case "thanks":
+            contactLoad.loadBg('linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)),');
+            break;
         default:
+          console.log("hi");
         //fires the initialload even once all images are loaded
           initialLoad.init();
           break;
