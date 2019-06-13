@@ -56,6 +56,7 @@ function fn(){
           naturePhotos();
           break;
         default:
+          console.log("hi");
         //fires the initialload even once all images are loaded
           initialLoad.init();
           break;

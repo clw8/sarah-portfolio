@@ -2,12 +2,13 @@
     <div id="app">
 		<div class="contact-wrapper hidden" background-image-src="img/nature_photography/Peak_District_National_Park_UK.jpg">
 			<h1>Contact</h1>
-					<form action="contactform.php" method="post" class="flex-col">
-  
-							<label for="name">Name</label>
-							<input type="text" id="name" name="name" placeholder="Your name" class="form-input" required>
+					<form action="https://formspree.io/sarahhouben@outlook.com" method="POST" class="flex-col"
+					>
+						<input type="hidden" name="_next" value="https://sarahhouben.com/imprint.html"/>
+							<!-- <label for="name">Name</label>
+							<input type="text" id="name" name="name" placeholder="Your name" class="form-input" required> -->
 						
-							<label for="email">Reply to</label>
+							<label for="email">Email</label>
 							<input type="text" id="email" name="email" placeholder="abc@email.com" class="form-input" required>
 										
 							<label for="message">Your message</label>
