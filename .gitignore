@@ -1,2 +1,11 @@
-img
+src/img
+src/index.html
+src/contact.html
+src/imprint.html
+src/lab-photos.html
+src/nature-photos.html
+src/projects.html
+src/privacy.html
+src/writing.html
+src/thanks.html
 node_modules
