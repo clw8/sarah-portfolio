@@ -12,8 +12,8 @@ Compiles files from the /view folder and puts them in the root ( on the same lev
 Creates a file called global--production.css at the root
 
 1) To see your website, run "npm run serve" in the terminal
-2) When you make a change, open a new window and run "npm run build"
-3) Only touch /views, /css or /js folders
+2) Then run "npm run watch"
+3) Changes in the /views, /css or /js folders are now being watched and will cause an automatic reload
 
 Running build.js with "npm run build" does the following:
 Gets files from the /views folder, and combines/smooshes each of them with the base.html file...and then puts them in the root ( on the same level as the build.js file ).

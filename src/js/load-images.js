@@ -34,6 +34,8 @@ class LoadImages extends LoadImagesBasic{
             let img = new Image();
             img.addEventListener('load', this.loadHandler , false);
             img.src = this.bgimgsrc;
+
+            img.onerror = this.loadHandler
         }
         else if(!!this.HtmlElement && this.cached){
             this.HtmlElement.style.background = this.backgroundStyle;
